@@ -14,7 +14,8 @@ final as (
         quantity,
         userid as employee_id,
         customerid as customer_id,
-        datetime as created_at
+        datetime as created_at,
+        {{utc_to_etc('datetime')}} as created_at_est
 
     from orders
 
