@@ -14,7 +14,8 @@ final as (
         cityid as city_id,
         mainsalesrepid as main_employee_id,
         createdatetime as created_at,
-        updatedatetime as updated_at,
+        {{utc_to_etc('createdatetime')}} as created_at_est,
+        {{utc_to_etc('updatedatetime')}} as updated_at_est,
         CASE 
             WHEN active = 'yes' then true else false end as is_active
     
