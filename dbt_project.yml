@@ -23,3 +23,11 @@ models:
       +materialized: table
     intermediate:
       +materialized: ephemeral 
+
+seeds:
+  dbt_training:
+    sales_dates:
+      + column_types:
+        SALES_DATE: date
+        NAME: varchar
+        DISCOUNT_PRICE: numeric(18,2)
