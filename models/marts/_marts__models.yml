@@ -3,9 +3,7 @@ version: 2
 
 models: 
   - name: customers
-    description: Test
-    tables:
-        - name: customer_id
-          tests:
-            - not null
-  - name: orders
+    columns:
+      - name: total_revenue_in_usd
+        tests:
+          - not_negative
