@@ -15,7 +15,8 @@ final as (
         mainsalesrepid as main_employee_id,
         createdatetime as created_at,
         updatedatetime as updated_at,
-        active as is_active
+        CASE 
+            WHEN active = 'yes' then true else false end as is_active
     
     from customers
 
