@@ -31,3 +31,6 @@ seeds:
         SALES_DATE: date
         NAME: varchar
         DISCOUNT_PRICE: numeric(18,2)
+
+vars:
+  default_date: '9999-01-01'
