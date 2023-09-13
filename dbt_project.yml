@@ -21,6 +21,8 @@ models:
       +materialized: view
     marts:
       +materialized: table
+      +tags:
+        - p1
     intermediate:
       +materialized: ephemeral 
 
