@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: payment_app
+    database: raw
+    schema: payment_app
+    tables:
+      - name: transactions
+        description: >
+          This is a reference to the source called transactions in the RAW schema of our Snowflake WH 
